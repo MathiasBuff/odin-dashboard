@@ -7,34 +7,34 @@
     <title>TOP Dashboard Project</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <header>
-        <div>
+<body class="grid-container">
+    <header class="grid-container">
+        <div id="header-top-left">
             <img class="icon" src="/assets/icons/magnify.svg" alt="search icon">
             <input type="search" name="search" id="search">
         </div>
-        <div>
+        <div id="header-bottom-left">
             <img class="profile-large" src="/assets/pictures/profile-self.png" alt="profile picture">
             <div>Hi there,</div>
             <div>Mathias Buff</div>
         </div>
-        <div>
+        <div id="header-top-right">
             <img class="icon" src="/assets/icons/bell-ring-outline.svg" alt="bell icon">
-            <img class="img-normal" src="/assets/pictures/profile-self.png" alt="profile picture">
+            <img class="profile" src="/assets/pictures/profile-self.png" alt="profile picture">
             <div>Mathias Buff</div>
         </div>
-        <div>
+        <div id="header-bottom-right">
             <button>New</button>
             <button>Upload</button>
             <button>Share</button>
         </div>
     </header>
-    <nav>
-        <div>
+    <nav class="grid-container">
+        <div id="nav-top">
             <img class="icon-large" src="/assets/icons/view-dashboard.svg" alt="dashboard icon">
-            <h1><a href="/index.html">Dashboard</a></h1>
+            <a href="/index.html">Dashboard</a>
         </div>
-        <div>
+        <div id="nav-middle">
             <div>
                 <img class="icon" src="/assets/icons/home.svg" alt="home icon">
                 <a href="">Home</a>
@@ -60,7 +60,7 @@
                 <a href="">Community</a>
             </div>
         </div>
-        <div>
+        <div id="nav-bottom">
             <div>
                 <img class="icon" src="/assets/icons/cog.svg" alt="cogwheel icon">
                 <a href="">Settings</a>
@@ -75,10 +75,10 @@
             </div>
         </div>
     </nav>
-    <main>
-        <div>
+    <main class="grid-container">
+        <div id="main-cards">
             <h2>Your Projects</h2>
-            <div>
+            <div id="cards-container" class="grid-container">
                 <div class="card">Card1</div>
                 <div class="card">Card2</div>
                 <div class="card">Card3</div>
@@ -87,17 +87,17 @@
                 <div class="card">Card6</div>
             </div>
         </div>
-        <div>
+        <div id="main-news">
             <h2>Announcements</h2>
-            <div>
+            <div class="grid-container">
                 <div>News1</div>
                 <div>News2</div>
                 <div>News3</div>
             </div>
         </div>
-        <div>
+        <div id="main-trending">
             <h2>Trending</h2>
-            <div>
+            <div class="grid-container">
                 <div>
                     <img class="profile" src="/assets/pictures/profile-self.png" alt="profile picture">
                     <div>@mathias</div>
