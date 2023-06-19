@@ -24,7 +24,7 @@ a {
 
 body {
     grid-template-columns: 250px auto;
-    grid-template-rows: 150px auto;
+    grid-template-rows: 200px auto;
     min-height: 100vh;
     min-width: 100vw;
 }
@@ -148,17 +148,33 @@ header {
 }
 
 main {
+    background-color: rgb(211, 225, 235);
+    padding: 30px 20px;
+
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 20px;
 
     >#main-cards {
         grid-row: 1 / 3;
 
         >#cards-container {
             grid-template-columns: 1fr 1fr;
+            gap: 20px;
         }
     }
     >#main-news {
         grid-row: 1 / 2;
+    }
+
+    .card {
+        background-color: white;
+        border: none;
+        border-radius: 6px;
+        padding: 15px;
+    }
+
+    .left-border {
+        border-left: solid 6px rgb(216, 202, 6);
     }
 }
